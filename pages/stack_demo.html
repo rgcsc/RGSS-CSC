@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <title>Stack Demo</title>
+</head>
+<body>
+    <h1 class="mdc-typography--display1">Stack Demo</h1>
+    <p class="mdc-typography--body1">
+        So, what's a stack? Well, it's just a <strong>data structure</strong>,
+        where the element that you just recently inserted is the first element to come
+        out (<i>LIFO</i> - last in, first out). This is convenient for many applications!
+        Here, play around with our demo of a stack (with the sloppy animations and all).
+    </p>
+
+    <form action="#" id="stack-form">
+        <div>
+            <div class="mdc-form-field">
+                <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                    <input id="value-added" type="text" class="mdc-text-field__input">
+                    <label for="value-added" class="mdc-text-field__label">
+                    Value to put
+                    </label>
+                    <div class="mdc-text-field__bottom-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit"
+                class="mdc-button
+                        mdc-button--raised
+                        mdc-ripple-surface"
+                data-mdc-auto-init="MDCRipple">
+            Add To Stack
+        </button>
+    </form>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>window.mdc.autoInit();</script>
+</body>
+</html>
